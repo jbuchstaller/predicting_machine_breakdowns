@@ -1,6 +1,6 @@
 # predicting_machine_breakdowns
 
-Working with machine sensor data, the goal is to predict when a breakdown will occur before it happens. I took two approaches:
+Working with machine sensor data, the goal was to predict when a breakdown will occur before it happens. I took two approaches:
 
 1)In the first (notebook ‘machine_breakdown_prediction_final_rolled_up_time_JB), I rolled up the time series into 30 min intervals and labeled the intervals in which the machine broke. I then tested various classifiers that predict the interval in which the machine breaks from the sensor data. The best performing classifier was an SVM with polynomial kernel that classified the 2 test intervals correctly, but would also lead to misclassifications. The utility of such a classifier and the need for further tuning/ development would depend on the business problem (i.e how much in advance the issue would need to be detected and cost of inspecting the machines in the case of non-failure).
  
